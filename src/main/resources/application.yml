@@ -1,0 +1,22 @@
+# File upload service port
+server:
+  port: 9877
+
+# Temporary directory for storing files
+file:
+  path: /opt/hxzybus-fs/files
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
+
+async:
+  executor:
+    thread:
+      core_pool_size: 10
+      max_pool_size: 20
+      queue_capacity: 999
+      name:
+        prefix: async-service-
