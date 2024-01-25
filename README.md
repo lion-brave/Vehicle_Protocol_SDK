@@ -6,7 +6,7 @@
 
 ## 2. Detailed explanation of the protocol
 
-###2.1 Signature
+### 2.1 Signature
 
 - File name + random number form a string to be signed
 - Sign the string to be signed with HmacSHA1 to obtain the base64 signature string sign
